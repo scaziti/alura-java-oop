@@ -1,0 +1,5 @@
+package loja.entities;
+
+public class Cliente {
+
+}

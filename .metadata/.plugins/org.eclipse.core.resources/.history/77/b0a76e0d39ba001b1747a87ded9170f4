@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+public class SaldoInsuficienteException {
+
+	
+	public static void main(String[] args) {
+	
+		new SaldoInsuficienteException().iterator(new int[] {10,12,13});
+	}
+	
+	void iterator(int[] i) {
+		for (int x = 0; x < i.length -1; System.out.println(i[x] + " ")) x++;
+	}
+}

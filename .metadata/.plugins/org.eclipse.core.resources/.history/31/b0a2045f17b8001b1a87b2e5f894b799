@@ -1,0 +1,14 @@
+package loja.application;
+
+import loja.entities.Cliente;
+
+public class TestaCliente {
+	public static void main(String[] args) {
+		
+		Cliente c = new Cliente("Raphael Scaziti", "360.582.948-19");
+		
+		boolean valida = c.cadastraNome("");
+		System.out.println(valida);
+	}
+
+}

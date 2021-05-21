@@ -1,0 +1,14 @@
+
+public class ContaCorrente extends Conta {
+
+	//Constructor
+	public ContaCorrente(int agencia, int numero) {
+		super(agencia, numero);
+	}
+	 
+	@Override
+	public boolean saca(double valor) {
+		double valorASacar = valor + 0.2; // terá uma taxa a cada saque
+		return super.saca(valorASacar);
+	}
+}

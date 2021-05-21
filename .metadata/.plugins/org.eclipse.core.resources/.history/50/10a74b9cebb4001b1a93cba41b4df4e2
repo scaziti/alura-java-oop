@@ -1,0 +1,19 @@
+
+public class TestaValores {
+	
+	public static void main(String[] args) {	
+		Conta conta = new Conta(7237, 1001);
+		
+		// Conta está inconsistente, pois o valor default ainda é zero.
+		conta.setNumero(-1);
+		conta.setAgencia(-1);
+		
+		System.out.println(conta.getNumero());
+		System.out.println(conta.getAgencia());
+		
+		
+		int total = 0;
+		System.out.println(total--);
+	}
+
+}

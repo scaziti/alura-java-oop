@@ -1,0 +1,8 @@
+
+public class ContaCorrente extends Conta {
+
+	//Constructor
+	public ContaCorrente(int agencia, int numero) {
+		super(agencia, numero);
+	}
+}

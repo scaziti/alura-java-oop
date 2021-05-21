@@ -1,0 +1,23 @@
+package raphael.banco;
+
+public class TestaBanco {
+
+	public static void main(String[] args) {
+		
+		Conta contaRapha = new Conta();
+		contaRapha.titular = new Cliente();
+		
+		contaRapha.titular.nome = "Raphael Scaziti";
+		contaRapha.titular.cpf = "123";
+		contaRapha.agencia = 7227;
+		contaRapha.numero = 1001;
+		contaRapha.saldo = 80_000.00;
+		
+		System.out.println("Status da contas antes de alterações: " + "\n\n" + contaRapha);
+		
+		contaRapha.deposita(10_000);
+		System.out.println("\nDepois de depositar: " + "\n\n" + contaRapha);
+		
+		contaRapha.saca(-100);
+	}
+}

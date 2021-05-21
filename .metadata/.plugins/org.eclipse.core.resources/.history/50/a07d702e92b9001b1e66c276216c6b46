@@ -1,0 +1,19 @@
+package testes.override.overload;
+
+public class TestAnimal {
+
+	public static void main(String[] args) {
+		
+		
+		try {
+			int a = 1/0;
+		} catch(ArithmeticException ae){
+			System.out.println("Não existe divisão por zero!");
+		} 
+//		finally {
+//			
+//		}
+		
+		System.out.println("Até logo!");
+	}
+}

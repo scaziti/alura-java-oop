@@ -1,0 +1,16 @@
+import java.util.Arrays;
+
+public class SaldoInsuficienteException {
+
+	static int x = 2;
+	public static void main(String[] args) {
+	
+		if (x > 1) {
+			x++;
+			int x = 4;
+		}
+		final int x = 10;
+		System.out.println(x);
+		
+	}
+}

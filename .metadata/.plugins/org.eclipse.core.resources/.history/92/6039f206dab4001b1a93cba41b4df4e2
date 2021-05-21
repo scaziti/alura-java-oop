@@ -1,0 +1,10 @@
+package raphael.banco;
+
+public class TestaBanco {
+
+	public static void main(String[] args) {
+		
+		args[0] = "1";
+		System.out.println(args[0]);
+	}
+}

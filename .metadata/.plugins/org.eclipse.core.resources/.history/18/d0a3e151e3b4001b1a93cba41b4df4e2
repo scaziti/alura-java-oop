@@ -1,0 +1,16 @@
+
+public class TestaGetESet {
+
+	public static void main(String[] args) {
+		Conta conta = new Conta();
+		conta.setNumero(1001);
+		System.out.println(conta.getNumero());
+		
+		Cliente rapha = new Cliente();
+		
+		rapha.setNome("Raphael Scaziti");
+		conta.setTitular(rapha);
+		
+		System.out.println(conta.getTitular().getNome());
+	}
+}

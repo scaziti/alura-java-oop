@@ -1,0 +1,12 @@
+package dasd;
+
+public class dad {
+
+	public static void main(String[] args) {
+		
+		String s = "s";
+		StringBuilder builder = new StringBuilder();
+		
+		builder.is
+	}
+}

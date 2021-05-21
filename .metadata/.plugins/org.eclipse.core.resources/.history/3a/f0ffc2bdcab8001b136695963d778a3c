@@ -1,0 +1,10 @@
+
+public class TestaInterface implements Autenticavel{
+
+	public static void main(String[] args) {
+		
+		TestaInterface t = new TestaInterface();
+		t.setSenha(122);
+		Autenticavel.autentica(1);
+	}
+}

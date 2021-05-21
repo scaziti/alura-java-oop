@@ -1,0 +1,9 @@
+public class Gerente extends Funcionario{
+	
+	// override / sobreposição
+	public double getBonificacao() {
+		return super.getSalario();
+	}
+	
+	
+}

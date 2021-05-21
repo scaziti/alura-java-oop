@@ -1,0 +1,114 @@
+public class Conta{
+	
+	//Attributes 
+	private double saldo;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
+	private static int totalDeContas;
+	
+	//Constructor
+	public Conta(int agencia, int numero, double saldo){
+		Conta.totalDeContas++;
+		if (agencia <= 100) {
+			System.out.println("Número de agência inválido, informe um número acima de 100");
+		}
+		else {
+			this.agencia = agencia;
+		}
+		
+		if (numero <= 1_000) {
+			System.out.println("Número da conta inválido, informe um número acima de 1000");
+		}
+		else {
+			this.numero = numero;
+		}
+		
+		if (saldo < 0) {
+			System.out.println("Não é possível informar um saldo negativo");
+		}
+		else {
+			this.saldo = saldo;
+		}	
+	}
+	
+	public Conta(int agencia, int numero) {
+		Conta.totalDeContas++;
+		// System.out.println("O total de contas é " + Conta.totalDeContas);
+		this.agencia = agencia;
+		this.numero = numero;
+		// System.out.println("Estou criando uma conta " + this.numero);
+	}
+	
+	
+	//Methods
+	public boolean deposita(double valor){
+		if (valor < 0) {
+			return false;
+		}
+		else {
+			this.saldo += valor;
+			return true;
+		}
+	}
+	
+	public boolean saca(double valor) {
+		if (this.saldo >= valor && valor > 0) {
+			this.saldo -= valor;
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean transferePara(Conta destino, double valor) {
+		if (this.saldo >= valor && valor > 0.0) {
+			this.saca(valor);
+			destino.deposita(valor);
+			return true;
+		}
+		return false;
+	}
+	
+	public double getSaldo() {
+		return this.saldo;
+	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	
+	public void setNumero(int numero) {
+		if (numero <= 0) {
+			System.out.println("Não é permitido número zero ou negativo");
+		}
+		else {
+			this.numero = numero;
+		}
+	}
+	
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public void setAgencia(int agencia) {
+		if (agencia <= 0) {
+			System.out.println("Não é permitido número zero ou negativo");
+		}else {
+			this.agencia = agencia;
+		}
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return this.titular;
+	}
+	
+	// Lembrando, posso escrever apenas totalDeContas (SEM O THIS)
+	// Preciso informar que é static, assim digo que é um método da class, não do object
+	public static int getTotalDeContas() {
+		return Conta.totalDeContas;
+	}
+}

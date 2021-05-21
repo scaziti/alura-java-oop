@@ -1,0 +1,17 @@
+import java.util.Arrays;
+
+public class SaldoInsuficienteException {
+
+	public static void main(String[] args) {
+		int x = 5, y = 10;
+		
+		try {
+			y  = x;
+		} catch (Exception e) {
+			System.out.println("error");
+		} finally {
+			System.out.println("Finally");
+		}
+	}
+	
+}

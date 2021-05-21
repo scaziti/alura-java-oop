@@ -1,0 +1,14 @@
+package testes.gerais;
+
+public class Cat extends Animal{
+
+	public Cat(String name, String noise) {
+		super(name, noise);
+	}
+	
+	@Override
+	protected double doingSomething() {
+		System.out.println("Cat is doing somenthing");
+		return 10;
+	}
+}

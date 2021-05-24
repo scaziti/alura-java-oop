@@ -1,8 +1,0 @@
-package raphael.banco;
-
-public class Cliente {
-	
-	String nome;
-	String cpf;
-
-}

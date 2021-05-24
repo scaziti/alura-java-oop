@@ -1,5 +1,13 @@
 package br.com.gothanbank.banco.modelo;
 
+/**
+ * Classe para representação de uma conta bancária
+ * 
+ * @author Raphael Scaziti
+ * @version 0.1
+ *
+ */
+
 public abstract class Conta{
 	
 	//Attributes 
@@ -9,7 +17,12 @@ public abstract class Conta{
 	private Cliente titular;
 	private static int totalDeContas;
 	
-	//Constructor	
+	/**
+	 * Construtor para inicializar o objeto Conta a partir da agencia e numero
+	 * 
+	 * @param agencia
+	 * @param numero
+	 */
 	public Conta(int agencia, int numero) {
 		Conta.totalDeContas++;
 		// System.out.println("O total de contas é " + Conta.totalDeContas);
@@ -21,6 +34,13 @@ public abstract class Conta{
 	
 	//Methods
 	public abstract void deposita(double valor);
+	
+	/**
+	 * Valor precisa ser maior que o saldo
+	 * 
+	 * @param valor
+	 * @throws SaldoInsuficienteException
+	 */
 	
 	public void saca(double valor) throws SaldoInsuficienteException{
 		if (this.saldo < valor) {

@@ -20,20 +20,17 @@ public abstract class Conta{
 	//Methods
 	public abstract void deposita(double valor);
 	
-	public boolean saca(double valor) {
-		if (this.saldo >= valor && valor > 0.0) {
-			this.saldo -= valor;
-			return true;
+	public void saca(double valor) throws SaldoInsuficienteException{
+		if (this.saldo < valor) {
+			throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);	
 		}
-		return false;
+		this.saldo -= valor;
 	}
 	
-	public boolean transferePara(Conta destino, double valor) {
-		if (this.saca(valor) && valor > 0.0) {
-			destino.deposita(valor);
-			return true;
-		}
-		return false;
+	public void transferePara(Conta destino, double valor) throws SaldoInsuficienteException {
+		this.saca(valor);
+		destino.deposita(valor);	
+		
 	}
 	
 	// Getters and Setters

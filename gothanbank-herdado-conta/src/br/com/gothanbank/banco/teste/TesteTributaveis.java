@@ -1,3 +1,6 @@
+package br.com.gothanbank.banco.teste;
+
+import br.com.gothanbank.banco.modelo.*;
 
 public class TesteTributaveis {
 

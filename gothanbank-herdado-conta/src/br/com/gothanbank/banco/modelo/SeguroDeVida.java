@@ -1,3 +1,4 @@
+package br.com.gothanbank.banco.modelo;
 
 public class SeguroDeVida implements Tributavel {
 

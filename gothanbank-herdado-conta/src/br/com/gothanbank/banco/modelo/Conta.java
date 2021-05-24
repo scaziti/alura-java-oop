@@ -1,3 +1,5 @@
+package br.com.gothanbank.banco.modelo;
+
 public abstract class Conta{
 	
 	//Attributes 

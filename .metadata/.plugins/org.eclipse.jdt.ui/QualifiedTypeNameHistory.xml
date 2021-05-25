@@ -16,7 +16,6 @@
     <fullyQualifiedTypeName name="EditorVideo"/>
     <fullyQualifiedTypeName name="Designer"/>
     <fullyQualifiedTypeName name="SistemaInterno"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="FuncionarioAutenticavel"/>
     <fullyQualifiedTypeName name="Funcionario"/>
     <fullyQualifiedTypeName name="TestaInterface"/>
@@ -50,6 +49,8 @@
     <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
     <fullyQualifiedTypeName name="jdk.javadoc.internal.doclets.toolkit.taglets.ThrowsTaglet"/>
     <fullyQualifiedTypeName name="modelo.SaldoInsuficienteException"/>
-    <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.Conta"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>

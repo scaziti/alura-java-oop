@@ -55,6 +55,11 @@ public abstract class Conta{
 		
 	}
 	
+	@Override
+	public String toString() {
+		return "Numero: "  + this.numero;
+	}
+	
 	// Getters and Setters
 	
 	public double getSaldo() {

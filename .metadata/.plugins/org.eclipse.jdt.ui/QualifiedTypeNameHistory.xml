@@ -29,7 +29,6 @@
     <fullyQualifiedTypeName name="CalculadorDeImposto"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="raphael.main.Prioridade"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="com.sun.tools.jdeprscan.scan.Scan"/>
     <fullyQualifiedTypeName name="hackerRank.JavaBigInteger"/>
     <fullyQualifiedTypeName name="java.math.BigInteger"/>
@@ -51,6 +50,12 @@
     <fullyQualifiedTypeName name="modelo.SaldoInsuficienteException"/>
     <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.Conta"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="testes.override.overload.Cat"/>
+    <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.GuardadorDeReferencias"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.gothanbank.banco.modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 </qualifiedTypeNameHistroy>

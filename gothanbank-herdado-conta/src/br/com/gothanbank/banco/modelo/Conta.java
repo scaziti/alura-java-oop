@@ -57,7 +57,9 @@ public abstract class Conta{
 	
 	@Override
 	public String toString() {
-		return "Numero: "  + this.numero;
+		StringBuilder builder = new StringBuilder();
+		builder.append("Nº: " + this.numero + ", Ag: " + this.agencia);
+		return builder.toString();
 	}
 	
 	// Getters and Setters

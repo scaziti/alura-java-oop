@@ -6,7 +6,7 @@ import br.com.gothanbank.banco.modelo.Conta;
 import br.com.gothanbank.banco.modelo.ContaCorrente;
 import br.com.gothanbank.banco.modelo.ContaPoupanca;
 
-public class Teste {
+public class TesteList {
 
 	public static void main(String[] args) {
 		

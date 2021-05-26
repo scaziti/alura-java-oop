@@ -56,6 +56,24 @@ public abstract class Conta{
 	}
 	
 	@Override
+	public boolean equals(Object ref) {
+		
+		// Como o método original recebe um Object, preciso fazer um cast de conta
+		Conta outraConta = (Conta) ref;
+		
+		// Pois na Classe Object, não existe esses parametros
+		if (this.agencia != outraConta.agencia) {
+			return false;
+		}
+		
+		if (this.numero != outraConta.numero) {
+			return false;
+		}
+		
+		return true;
+	}
+	
+	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("Nº: " + this.numero + ", Ag: " + this.agencia);

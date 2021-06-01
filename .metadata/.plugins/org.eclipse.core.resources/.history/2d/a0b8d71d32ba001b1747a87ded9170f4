@@ -1,9 +1,0 @@
-import java.util.Arrays;
-
-public class SaldoInsuficienteException {
-
-	public static void main(String[] args) {
-		int[] int = new int[-1];
-	}
-	
-}

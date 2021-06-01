@@ -1,0 +1,2 @@
+Texto escrito pelo Eclipse, utilizando Java
+Outra linha digitada após um fw.newLine()

@@ -1,6 +1,0 @@
-package raphael.main;
-
-public enum Prioridade {
-
-	MIN, NORMAL, MAX;
-}

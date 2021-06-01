@@ -1,7 +1,0 @@
-package raphael.main;
-
-public enum Prioridade {
-
-	// Já são instanciados aqui, portanto, são sim objetos
-	MIN, NORMAL, MAX;
-}

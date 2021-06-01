@@ -1,0 +1,2 @@
+Inicio do arquivo, onde escrevo qualquer coisa para testar o currentTimeMilles()
+Segunda linha de texto!

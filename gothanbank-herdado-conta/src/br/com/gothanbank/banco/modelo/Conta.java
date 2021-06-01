@@ -8,7 +8,8 @@ package br.com.gothanbank.banco.modelo;
  *
  */
 
-public abstract class Conta{
+
+public abstract class Conta implements Comparable<Conta>{
 	
 	//Attributes 
 	protected double saldo;
@@ -76,8 +77,14 @@ public abstract class Conta{
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Nº: " + this.numero + ", Ag: " + this.agencia);
+		builder.append("Titular: " + this.titular.getNome() + "\t, Nº: " + this.numero + ", Ag: " + this.agencia + ", Saldo R$ " + this.saldo);
 		return builder.toString();
+	}
+	
+	@Override
+	public int compareTo(Conta outra) {
+		
+		return Double.compare(this.saldo, outra.saldo);
 	}
 	
 	// Getters and Setters

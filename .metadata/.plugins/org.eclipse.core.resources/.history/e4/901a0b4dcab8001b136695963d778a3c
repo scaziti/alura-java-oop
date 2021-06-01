@@ -1,9 +1,0 @@
-
-public abstract interface Autenticavel {
-
-	default void setSenha(int senha) {
-		System.out.println("sou o setSenha da Interface");
-	}
-
-	public abstract boolean autentica(int senha);
-}
